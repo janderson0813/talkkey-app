@@ -37,7 +37,12 @@
   </ul>
 
   <h2>What goes over the network</h2>
-  <p>Only one thing: <strong>downloading the speech model</strong> (about 630&nbsp;MB) the first time you use TalkKey, or when you pick a different model. It comes from Hugging Face (huggingface.co, Argmax's <code>whisperkit-coreml</code> repository). Like any download, Hugging Face sees the request (for example your IP address). Nothing about you or what you say is sent.</p>
+  <p>Only two things, and neither includes anything you say:</p>
+  <ol>
+    <li><strong>Downloading the speech model</strong> (about 630&nbsp;MB) the first time you use TalkKey, or when you pick a different model. It comes from Hugging Face (huggingface.co, Argmax's <code>whisperkit-coreml</code> repository).</li>
+    <li><strong>Checking for updates:</strong> about once a day (and when you choose <em>Check for Updates…</em>), TalkKey fetches a small list of available versions from the TalkKey site on GitHub (janderson0813.github.io). If you install an update, it's downloaded from GitHub. No information about your Mac is sent with these checks.</li>
+  </ol>
+  <p>Like any web request, Hugging Face and GitHub see the request itself (for example your IP address, and for update checks the app name and version).</p>
 
   <h2>What's stored on your Mac</h2>
   <ul>
@@ -57,7 +62,7 @@
 
   <h2>Questions</h2>
   <p>Open an issue at <a href="https://github.com/janderson0813/talkkey-app/issues">github.com/janderson0813/talkkey-app/issues</a>.</p>
-  <p class="muted">Last updated September 28, 2026.</p>
+  <p class="muted">Last updated September 28, 2026 (added update checks).</p>
 </main>
 </body>
 </html>
