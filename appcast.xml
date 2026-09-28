@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.3</title>
+      <pubDate>Mon, 28 Sep 2026 23:00:28 GMT</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>0.4.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Choose which microphone TalkKey listens to.</p><ul><li>New: Microphone in the TalkKey menu. Pick any connected mic, or System Default to follow your Mac&#x27;s Sound settings.</li><li>Tip: with AirPods connected, choose your Mac&#x27;s built-in microphone so your AirPods keep full audio quality while you dictate.</li><li>If the mic you picked is unplugged, TalkKey uses your default mic until it&#x27;s back.</li><li>If TalkKey hears only silence, it now points you to the Microphone menu.</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.3/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="hTXoaACaKRH9h4dfwKO2tuywk9kbNeIG6B8D9oL69suFvDtDX+3tPrLDvwQhS2s4PpxlK1IRMHY0rVDOMDkFBw==" length="2805670" />
+    </item>
+    <item>
       <title>Version 0.4.2</title>
       <pubDate>Mon, 28 Sep 2026 21:13:16 GMT</pubDate>
       <sparkle:version>9</sparkle:version>
