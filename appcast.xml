@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>TalkKey</title>
+    <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
+    <language>en</language>
+    <item>
+      <title>Version 0.4.1</title>
+      <pubDate>Mon, 28 Sep 2026 20:30:08 GMT</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Automatic updates.</p><ul><li>New: Check for Updates… in the TalkKey menu. TalkKey also checks once a day and offers new versions with one-click Install and Relaunch.</li><li>Updates are signed and verified before installing.</li><li>Includes 0.4.0&#x27;s two hotkeys (F15 and fn by default).</li></ul><p>If you have 0.4.0 or earlier, download this version once; after that, updates come to you.</p>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.1/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="LU0WGNZQS67SirnZfkf8OZwY94ETbz+QZgsQw4iL2oIVHGntwIMwhPJnVykcwshp7Vt7SKH2OPJKmpavrsxhAQ==" length="2790891" />
+    </item>
+  </channel>
+</rss>
