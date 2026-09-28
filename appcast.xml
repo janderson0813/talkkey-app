@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.2</title>
+      <pubDate>Mon, 28 Sep 2026 21:13:16 GMT</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>0.4.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Fixes for microphone problems and slow dictations.</p><ul><li>If TalkKey hears only silence, it no longer types &quot;you&quot; — it beeps and tells you whether to check Microphone permission or your input device.</li><li>Faster, more consistent transcription: Whisper retries far less on unclear audio (some dictations took 5 seconds).</li><li>Grammar cleanup now gives up after 1.5 seconds and types your words as-is, instead of sometimes taking 3+ seconds.</li><li>Troubleshooting report now shows microphone permission and input device.</li><li>About window: privacy text now mentions update checks.</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.2/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="astdP6e0Z3az2wSwAR14pGg1qVErR4SrRvhOj/TGapc4LYmGoR3QrWYoqB9kWlt3/RJsU4Yb3vrO5WaeTxzEDA==" length="2797154" />
+    </item>
+    <item>
       <title>Version 0.4.1</title>
       <pubDate>Mon, 28 Sep 2026 20:30:08 GMT</pubDate>
       <sparkle:version>8</sparkle:version>
