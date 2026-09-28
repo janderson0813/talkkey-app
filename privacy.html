@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TalkKey Privacy</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    :root { --bg: #f7f7fb; --card: #ffffff; --text: #1d1d24; --muted: #5d5d6b; --line: #e3e3ec; --accent: #3b3fd8; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) { --bg: #111117; --card: #1b1b23; --text: #ececf3; --muted: #a2a2b3; --line: #2c2c38; --accent: #8c88ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+    h2 { font-size: 20px; margin: 28px 0 8px; }
+    .lede { font-size: 19px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; }
+    ul { padding-left: 22px; } li { margin: 6px 0; }
+    code { font: 14px ui-monospace, "SF Mono", Menlo, monospace; overflow-wrap: anywhere; }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <p><a href="./">← TalkKey</a></p>
+  <h1>TalkKey Privacy</h1>
+  <p class="lede"><strong>Short version:</strong> TalkKey works entirely on your Mac. Your voice and your words never leave it. There are no accounts, no analytics, and no tracking.</p>
+
+  <h2>What happens when you dictate</h2>
+  <ul>
+    <li><strong>Your voice</strong> is recorded only while you hold the hotkey (or during hands-free mode), and only into memory. It's turned into text by a speech model running on your Mac and then discarded. TalkKey does not save recordings. (The only exception is a developer debugging setting, off by default and only switchable from Terminal, that saves recordings to your Mac's cache folder.)</li>
+    <li><strong>Grammar cleanup</strong> (optional) uses Apple's on-device model (Apple Intelligence) on your Mac.</li>
+    <li><strong>Typing the text:</strong> TalkKey briefly puts the text on your clipboard, presses ⌘V for you, and then puts back whatever was on your clipboard before.</li>
+    <li><strong>Spacing:</strong> to decide whether to add a space, TalkKey reads the single character just before your cursor. It isn't stored.</li>
+  </ul>
+
+  <h2>What goes over the network</h2>
+  <p>Only one thing: <strong>downloading the speech model</strong> (about 630&nbsp;MB) the first time you use TalkKey, or when you pick a different model. It comes from Hugging Face (huggingface.co, Argmax's <code>whisperkit-coreml</code> repository). Like any download, Hugging Face sees the request (for example your IP address). Nothing about you or what you say is sent.</p>
+
+  <h2>What's stored on your Mac</h2>
+  <ul>
+    <li>Your settings (hotkey, sounds, model choice).</li>
+    <li>The downloaded speech model, in <code>~/Library/Application Support/TalkKey</code>.</li>
+    <li>A timing log at <code>~/Library/Logs/TalkKey.log</code>: how long each dictation took to process, a pitch measurement, and the final punctuation mark. <strong>It never contains your words.</strong></li>
+  </ul>
+
+  <h2>Permissions TalkKey asks for</h2>
+  <ul>
+    <li><strong>Microphone:</strong> to hear you while the hotkey is held.</li>
+    <li><strong>Accessibility:</strong> to notice your hotkey in any app, type the text for you, and check the character before your cursor.</li>
+  </ul>
+
+  <h2>Removing TalkKey</h2>
+  <p>Quit TalkKey, then delete <strong>TalkKey</strong> from Applications, <code>~/Library/Application Support/TalkKey</code>, and <code>~/Library/Logs/TalkKey.log</code>.</p>
+
+  <h2>Questions</h2>
+  <p>Open an issue at <a href="https://github.com/janderson0813/talkkey-app/issues">github.com/janderson0813/talkkey-app/issues</a>.</p>
+  <p class="muted">Last updated September 28, 2026.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TalkKey — dictation for your Mac</title>
+  <meta name="description" content="Hold a key, speak, and your words are typed wherever your cursor is. Runs entirely on your Mac.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <style>
+    :root {
+      --bg: #f7f7fb; --card: #ffffff; --text: #1d1d24; --muted: #5d5d6b;
+      --line: #e3e3ec; --accent: #3b3fd8; --accent-2: #6b66fa; --accent-text: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #111117; --card: #1b1b23; --text: #ececf3; --muted: #a2a2b3;
+        --line: #2c2c38; --accent: #6b66fa; --accent-2: #8c88ff; --accent-text: #ffffff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 72px; }
+    header { text-align: center; }
+    header img { width: 128px; height: 128px; }
+    h1 { font-size: 44px; line-height: 1.1; margin: 16px 0 8px; letter-spacing: -0.02em; }
+    .tagline { font-size: 21px; color: var(--muted); margin: 0 auto 28px; max-width: 560px; }
+    .download {
+      display: inline-block; background: linear-gradient(180deg, var(--accent-2), var(--accent));
+      color: var(--accent-text); text-decoration: none; font-weight: 600; font-size: 18px;
+      padding: 14px 30px; border-radius: 12px; box-shadow: 0 4px 14px rgba(59, 63, 216, 0.3);
+    }
+    .download:hover { filter: brightness(1.07); }
+    .meta { color: var(--muted); font-size: 14px; margin-top: 12px; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 28px; margin-top: 28px; }
+    h2 { font-size: 22px; margin: 0 0 12px; }
+    ul, ol { margin: 0; padding-left: 22px; }
+    li { margin: 6px 0; }
+    kbd {
+      font: 14px ui-monospace, "SF Mono", Menlo, monospace; background: var(--bg);
+      border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 1px 6px;
+    }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .features div h3 { font-size: 16px; margin: 0 0 4px; }
+    .features div p { margin: 0; color: var(--muted); font-size: 15px; }
+    a { color: var(--accent); }
+    footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 36px; }
+    @media (max-width: 520px) { h1 { font-size: 36px; } section { padding: 20px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/icon.png" alt="TalkKey icon">
+    <h1>TalkKey</h1>
+    <p class="tagline">Hold a key, speak, and your words are typed wherever your cursor is. Runs entirely on your Mac.</p>
+    <a class="download" href="https://github.com/janderson0813/talkkey-app/releases/latest/download/TalkKey.dmg">Download for Mac</a>
+    <p class="meta"><span id="version">Latest version</span> · Apple Silicon · macOS 14 or later · Free</p>
+  </header>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="features">
+      <div><h3>Any key you like</h3><p>Hold your hotkey to talk, double-tap for hands-free. F13–F20, or Right Option on a laptop.</p></div>
+      <div><h3>Fast and accurate</h3><p>OpenAI's Whisper model on your Mac's Neural Engine — text in well under a second.</p></div>
+      <div><h3>Cleans up as you go</h3><p>Punctuation, filler words, and "no wait, I meant…" corrections, using Apple Intelligence on-device.</p></div>
+      <div><h3>Private by design</h3><p>Your voice never leaves your Mac. No account, no tracking.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Install</h2>
+    <ol>
+      <li>Open <strong>TalkKey.dmg</strong> and drag <strong>TalkKey</strong> onto <strong>Applications</strong>.</li>
+      <li>Open TalkKey. A short setup walks you through allowing the <strong>Microphone</strong> and turning TalkKey on under <strong>Accessibility</strong>, then downloads the speech model once (about 630&nbsp;MB).</li>
+      <li>Pick your hotkey, click into any text field, hold the key and talk. Say “question mark”, “comma”, or “new line” for punctuation.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <ul>
+      <li>A Mac with Apple Silicon (M1 or newer), macOS 14 Sonoma or later.</li>
+      <li>Grammar cleanup needs macOS 26 with Apple Intelligence turned on. Without it you still get accurate, punctuated text.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p style="margin:0">Everything happens on your Mac: speech-to-text, grammar cleanup, and typing. Recordings aren't saved, and there are no accounts, analytics, or tracking. The only network use is the one-time speech-model download from Hugging Face. <a href="privacy.html">Full privacy details</a>.</p>
+  </section>
+
+  <footer>
+    <p>Made by Jeff Anderson · Notarized by Apple ·
+      <a href="https://github.com/janderson0813/talkkey-app/issues">Report a problem</a> ·
+      <a href="https://github.com/janderson0813/talkkey-app/releases">All versions</a></p>
+    <p>Built with <a href="https://github.com/argmaxinc/WhisperKit">WhisperKit</a> and OpenAI's <a href="https://github.com/openai/whisper">Whisper</a> (MIT). License details are in the app under Acknowledgements.</p>
+  </footer>
+</main>
+<script>
+  // Show the latest release's version number (falls back to "Latest version").
+  fetch("https://api.github.com/repos/janderson0813/talkkey-app/releases/latest")
+    .then(r => r.ok ? r.json() : null)
+    .then(r => { if (r && r.tag_name) document.getElementById("version").textContent = "Version " + r.tag_name.replace(/^v/, ""); })
+    .catch(() => {});
+</script>
+</body>
+</html>
