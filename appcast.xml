@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.5</title>
+      <pubDate>Tue, 29 Sep 2026 19:20:02 GMT</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>0.4.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Much faster dictation: TalkKey now uses the Parakeet speech model (about 10x faster than before, same accuracy in our tests)</li><li>Existing installs keep working while the new model downloads once in the background (about 470 MB), then switch over automatically</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.5/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="Us36ZjxBhY+xTfUpDF6e6Nc27RZnTEXZ4qGbpJ3vyafIB+zp10h+4T87zRFaLnn0B5xaxDuwDdY62/8pD9VdAg==" length="13045147" />
+    </item>
+    <item>
       <title>Version 0.4.4</title>
       <pubDate>Tue, 29 Sep 2026 18:26:49 GMT</pubDate>
       <sparkle:version>11</sparkle:version>
