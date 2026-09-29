@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.4</title>
+      <pubDate>Tue, 29 Sep 2026 18:26:49 GMT</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>0.4.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>New: Sounds menu → Play Stop Sound (turn off the sound when you release the key)</li><li>Faster on slower Macs: grammar cleanup pauses itself if the Mac can&#x27;t keep up, and skips very long dictations</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.4/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="Zc8Ilghc6O0hpACCpsPU6r+sxA8uXw2Hmj8/L9vq8PDl9BqEddCgPKCtam4aJotwt7qtv/YDlI+4Bu8JsC+jDg==" length="2806915" />
+    </item>
+    <item>
       <title>Version 0.4.3</title>
       <pubDate>Mon, 28 Sep 2026 23:00:28 GMT</pubDate>
       <sparkle:version>10</sparkle:version>
