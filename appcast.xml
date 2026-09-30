@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.6</title>
+      <pubDate>Wed, 30 Sep 2026 10:12:40 GMT</pubDate>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>0.4.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Spoken email and web addresses: &quot;name at example dot org&quot; now types name@example.org</li><li>New Edit Replacements… menu item: fix words the speech engine keeps mishearing</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.6/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="zi+Rh20KNJ4LtnKhzzkx15W3tcPQhNBnzUAvoBGvSl+fYSonPMXhacdUd+dcskvgd53f7xLeETSi+DeoJhCoCw==" length="13049793" />
+    </item>
+    <item>
       <title>Version 0.4.5</title>
       <pubDate>Tue, 29 Sep 2026 19:20:02 GMT</pubDate>
       <sparkle:version>12</sparkle:version>
