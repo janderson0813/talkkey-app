@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.8</title>
+      <pubDate>Wed, 30 Sep 2026 13:05:50 GMT</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>0.4.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>Say &quot;quote … unquote&quot; to wrap words in quotation marks.</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.8/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="uHvoX8GvuLzFplBqJNVT8TUXmw005jWpkvMECmk5of/ptZtBGkUMl3jFiJAGi1X+9+VvMtwg/7NO2nNd7IOSBw==" length="13090165" />
+    </item>
+    <item>
       <title>Version 0.4.7</title>
       <pubDate>Wed, 30 Sep 2026 10:27:12 GMT</pubDate>
       <sparkle:version>14</sparkle:version>
