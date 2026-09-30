@@ -5,6 +5,15 @@
     <link>https://janderson0813.github.io/talkkey-app/appcast.xml</link>
     <language>en</language>
     <item>
+      <title>Version 0.4.7</title>
+      <pubDate>Wed, 30 Sep 2026 10:27:12 GMT</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>0.4.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<ul><li>New My Words &amp; Replacements… window: list your own names and email addresses once and TalkKey fixes near-miss spellings automatically</li><li>Spoken email fixes from 0.4.6 are unchanged</li></ul>]]></description>
+      <enclosure url="https://github.com/janderson0813/talkkey-app/releases/download/v0.4.7/TalkKey.dmg" type="application/octet-stream" sparkle:edSignature="upFgMxNANyrRHmEWQRVOia5rlfcL3DwqrYhqjcgViW2Q7nEVdWtz9Oy7CnAPghhMiVqMqTXamEeJpO3mKCVFBg==" length="13090360" />
+    </item>
+    <item>
       <title>Version 0.4.6</title>
       <pubDate>Wed, 30 Sep 2026 10:12:40 GMT</pubDate>
       <sparkle:version>13</sparkle:version>
